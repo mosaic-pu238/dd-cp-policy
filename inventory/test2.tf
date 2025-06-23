@@ -21,7 +21,7 @@ resource "checkpoint_management_host" "homer" {
     color        = "lemon chiffon"
     comments     = null
     #id           = "homer"
-    ipv4_address = "10.20.10.10"
+    ipv4_address = "10.20.10.11"
     name         = "homer"
     nat_settings = {}
     tags         = ["mmm"]
