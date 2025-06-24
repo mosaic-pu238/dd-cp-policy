@@ -2,7 +2,7 @@
 hosts:
   - name: hurvinek
     ip: 10.10.1.203
-    color: yellow
+    color: brown
     tags:
       - other
       - skupa
