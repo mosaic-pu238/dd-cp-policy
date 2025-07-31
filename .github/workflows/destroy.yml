@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  objects:
+  destroy:
     runs-on: ubuntu-latest
     env:
       CHECKPOINT_API_KEY: ${{ secrets.CHECKPOINT_API_KEY }}
@@ -26,13 +26,20 @@ jobs:
         with:
           terraform_version: 'latest'
 
-      - name: Terraform init inventory
+      - name: Destroy rules
+        run: |
+          cd apps
+          make down
+
+      - name: Publish policy
+        run: |
+          cd apps; ../scripts/publish.sh
+
+
+      - name: Destroy inventory
         run: |
           cd inventory
-          ../scripts/tfinit.sh
-
-      - name: Terraform destroy inventory
-        run: cd inventory; terraform destroy -auto-approve
+          make down
 
       - name: Publish policy
         run: |
