@@ -1,13 +1,22 @@
 
 hosts:
-  - name: hurvinek
-    ip: 10.10.1.203
-    color: brown
+  # - name: hurvinek
+  #   ip: 10.10.1.203
+  #   color: brown
+  #   tags:
+  #     - other
+  #     - skupa
+  #   comment: test
+
+
+  - name: tomcat
+    ip: 10.10.1.104
+    color: black
     tags:
-      - other
+      - tom_and_jerry
       - skupa
     comment: test
-
+    
   - name: spejbl
     ip: 10.10.1.204
     color: red
