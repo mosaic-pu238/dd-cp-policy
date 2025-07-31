@@ -1,5 +1,18 @@
 
 apps:
+
+  - name: coros_app
+    services:
+      - name: front-end-coros
+        services:
+          - https
+          - http
+        scope:
+          - net_coros_web
+        consumers:
+          - Any
+
+
   - name: magic_app
     services:
       - name: front-end
