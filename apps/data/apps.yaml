@@ -13,6 +13,15 @@ apps:
           - Any
 
 
+      - name: db-prim
+        services:
+          - https
+          - MS-SQL-Server
+        scope:
+          - net_prim_db
+        consumers:
+          - net_prim_web
+
   - name: coros_app
     services:
       - name: front-end-coros
