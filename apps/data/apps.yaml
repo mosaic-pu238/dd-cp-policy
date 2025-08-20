@@ -1,6 +1,18 @@
 
 apps:
 
+  - name: prim_app
+    services:
+      - name: prim-front-end
+        services:
+          - https
+          - http
+        scope:
+          - net_prim_web
+        consumers:
+          - Any
+
+
   - name: coros_app
     services:
       - name: front-end-coros
