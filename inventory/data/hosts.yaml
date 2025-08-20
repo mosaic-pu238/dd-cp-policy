@@ -35,19 +35,19 @@ hosts:
 
   - name: zeryk
     ip: 10.10.1.144
-    color: black
+    color: orange
     tags:
       - other
       - skupa
     comment: test
   
-  - name: zeryk2
-    ip: 10.10.1.145
-    color: orange
-    tags:
-      - other
-      - skupa
-    comment: test    
+  # - name: zeryk2
+  #   ip: 10.10.1.145
+  #   color: orange
+  #   tags:
+  #     - other
+  #     - skupa
+  #   comment: test    
 
 
   - name: babinka
