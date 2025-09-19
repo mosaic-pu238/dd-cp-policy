@@ -45,16 +45,16 @@ apps:
         consumers:
           - Any
 
-  - name: polar_app
-    services:
-      - name: front-end-polar
-        services:
-          - https
-          - http
-        scope:
-          - net_polar_pub
-        consumers:
-          - Any
+  # - name: polar_app
+  #   services:
+  #     - name: front-end-polar
+  #       services:
+  #         - https
+  #         - http
+  #       scope:
+  #         - net_polar_pub
+  #       consumers:
+  #         - Any
 
       # - name: backend-end-polar
       #   services:
