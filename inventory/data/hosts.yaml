@@ -25,13 +25,13 @@ hosts:
       - skupa
     comment: test
 
-  - name: manicka
-    ip: 10.10.1.219
-    color: red
-    tags:
-      - other
-      - skupa
-    comment: test
+  # - name: manicka
+  #   ip: 10.10.1.219
+  #   color: red
+  #   tags:
+  #     - other
+  #     - skupa
+  #   comment: test
 
   - name: zeryk
     ip: 10.10.1.144
