@@ -15,7 +15,7 @@ hosts:
     tags:
       - tom_and_jerry
       - skupa
-    comment: test
+    comment: test123
     
   - name: spejbl
     ip: 10.10.1.204
