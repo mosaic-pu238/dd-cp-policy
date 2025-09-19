@@ -1,8 +1,8 @@
-
+#https://docs.google.com/spreadsheets/d/174FfSCCP49UC-D-ySpofFGbk8W8cw6nCjCVYHm95OgU/edit?usp=sharing
 # https://opensheet.elk.sh/1AxnotD9U9kKOluFNRFPQoddXRg4ffVHaamdDIj31UhM/networks
 
 data "http" "networks" {
-  url = "https://opensheet.elk.sh/1AxnotD9U9kKOluFNRFPQoddXRg4ffVHaamdDIj31UhM/networks"
+  url = "https://opensheet.elk.sh/174FfSCCP49UC-D-ySpofFGbk8W8cw6nCjCVYHm95OgU/networks"
 }
 locals {
   networks = jsondecode(data.http.networks.response_body)
